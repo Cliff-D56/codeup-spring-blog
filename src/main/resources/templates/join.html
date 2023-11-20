@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en"  xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!-- TODO SPRING PARTIALS: RECEIVE ELEMENT-->
+<div th:replace="partials/navbar::navbar"></div>
+<!-- TODO SPRING IF STATEMENT-->
+<div th:if="${cohort.equals('Welcome to Clifford!')}">
+    <h1><span th:text="${cohort}"></span></h1>
+</div>
+<h1 th:text="${cohort}"></h1>
+<h1 th:text="${name}"></h1>
+<!-- TODO FOREACH FORMULA -->
+<div th:each="item : ${shopping}">
+    <p th:text="${item}"></p>
+</div>
+<form method="post" action="/join">
+    <label for="cohort">Cohort</label><input type="text" name="cohort" id="cohort">
+    <label for="name">Name</label><input type="text" name="name" id="name">
+  <button type="submit">Submit</button>
+</form>
+</body>
+ </html>

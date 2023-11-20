@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--TODO IN THE HTML TAG YOU NEED XMLNS TAG TO USE TH-->
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess</title>
+</head>
+<body>
+<h1>GUESS a dice roll</h1>
+<form action="/roll-dice" method="get">
+  <ul>
+    <li><a href="/roll-dice/1">1</a></li>
+    <li><a href="/roll-dice/2">2</a></li>
+    <li><a href="/roll-dice/3">3</a></li>
+    <li><a href="/roll-dice/4">4</a></li>
+    <li><a href="/roll-dice/5">5</a></li>
+    <li><a href="/roll-dice/6">6</a></li>
+  </ul>
+</form>
+<!--TODO TH ATTRIBUTE NEEDS TO BE IN AN ELEMENT AND GETS VALUE FROM MODEL ATTRIBUTE IN CONTROLLER-->
+<div th:if="${message != null}">
+    <h1 th:text="${message}"></h1>
+</div>
+</body>
+</html>
