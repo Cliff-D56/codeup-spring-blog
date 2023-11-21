@@ -1,4 +1,4 @@
-package com.codeup.codeupspringblog;
+package com.codeup.codeupspringblog.jpa.controllers;
 
 import org.springframework.boot.Banner;
 import org.springframework.stereotype.Controller;

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="/posts/create">
+    <label>Title
+        <input type="text"name="title">
+    </label>
+    <label>Description
+        <input type="text"name="description">
+    </label>
+    <button type="submit">Create new item</button>
+</form>
+<form method="get" action="/posts/index">
+    <button type="submit">See all items</button>
+</form>
+</body>
+</html>

@@ -1,4 +1,4 @@
-package com.codeup.codeupspringblog;
+package com.codeup.codeupspringblog.jpa.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -19,6 +19,7 @@ public class HomeController {
         return "hello";
     }
     @GetMapping("/")
+    //    TODO SPRING RETURNING ONLY STRINGS
     @ResponseBody
     public String hi1(){
         return "<div>\n" +

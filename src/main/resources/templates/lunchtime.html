@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en"xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            border-style: double;
+        }
+    </style>
+</head>
+<body>
+<div th:each="item : ${foods}">
+    <h1 th:text="${item.getName()}"></h1>
+    <h1 th:text="${item.getCalories()}"></h1>
+    <h1 th:text="${item.getType()}"></h1>
+</div>
+</body>
+</html>
